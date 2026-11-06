@@ -1,0 +1,34 @@
+# Fonte da verdade dos sites monitorados. `useo sync` copia isto pro banco.
+# Tirar um site ou keyword daqui desativa no banco (o histórico fica).
+
+defaults:
+  devices: [desktop, mobile]   # cada termo vira 1 keyword por device (2 consultas/dia)
+  location_code: 2076          # Brasil (código de localização do Google/DataForSEO)
+  language_code: pt
+  max_keywords: 100            # termos por site (antes de multiplicar por device)
+
+sites:
+  - dominio: unicopag.com.br
+    nome: Unicopag
+    ativo: true
+    # Variações do nome pra detectar menção em respostas de IA (M4).
+    marca: [Unicopag, Unico Pag, UnicoPag]
+    # RASCUNHO — revisar: concorrentes diretos (gateways/adquirentes).
+    concorrentes:
+      - stone.com.br
+      - pagbank.com.br
+      - cielo.com.br
+      - mercadopago.com.br
+      - getnet.com.br
+      - userede.com.br
+      - infinitepay.io
+      - asaas.com
+      - pagar.me
+    keywords: keywords/unicopag.com.br.csv
+
+  # Os outros 4 sites entram na F6. Modelo:
+  # - dominio: exemplo.com.br
+  #   nome: Exemplo
+  #   marca: [Exemplo]
+  #   concorrentes: [concorrente.com.br]
+  #   keywords: keywords/exemplo.com.br.csv

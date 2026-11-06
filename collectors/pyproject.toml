@@ -1,0 +1,35 @@
+[project]
+name = "useo"
+version = "0.1.0"
+description = "Coletores do Useo: rank tracking, AI visibility e site audit"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27,<1",
+  "pyyaml>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+useo = "useo.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["useo*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

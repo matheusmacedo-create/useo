@@ -1,0 +1,53 @@
+{
+  "version": "0.1.20261101",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "cost": 0,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "11061200-1111-0066-0000-aaaaaaaaaaaa",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "cost": 0,
+      "result_count": 1,
+      "path": ["v3", "serp", "google", "organic", "task_get", "advanced", "11061200-1111-0066-0000-aaaaaaaaaaaa"],
+      "data": {
+        "api": "serp",
+        "function": "task_get",
+        "se": "google",
+        "se_type": "organic",
+        "keyword": "gateway de pagamento",
+        "location_code": 2076,
+        "language_code": "pt",
+        "device": "desktop",
+        "os": "windows",
+        "depth": 100,
+        "tag": "KW-1"
+      },
+      "result": [
+        {
+          "keyword": "gateway de pagamento",
+          "type": "organic",
+          "se_domain": "google.com.br",
+          "location_code": 2076,
+          "language_code": "pt",
+          "check_url": "https://www.google.com.br/search?q=gateway+de+pagamento&hl=pt&gl=BR",
+          "datetime": "2026-11-06 06:12:31 +00:00",
+          "item_types": ["paid", "organic", "people_also_ask", "related_searches"],
+          "se_results_count": 12300000,
+          "items_count": 6,
+          "items": [
+            {"type": "paid", "rank_group": 1, "rank_absolute": 1, "domain": "www.stone.com.br", "url": "https://www.stone.com.br/anuncio"},
+            {"type": "organic", "rank_group": 1, "rank_absolute": 2, "domain": "www.pagar.me", "url": "https://www.pagar.me/gateway"},
+            {"type": "organic", "rank_group": 2, "rank_absolute": 3, "domain": "blog.asaas.com", "url": "https://blog.asaas.com/gateway"},
+            {"type": "people_also_ask", "rank_group": 1, "rank_absolute": 4, "items": []},
+            {"type": "organic", "rank_group": 3, "rank_absolute": 5, "domain": "www.unicopag.com.br", "url": "https://www.unicopag.com.br/gateway-de-pagamento"},
+            {"type": "organic", "rank_group": 4, "rank_absolute": 6, "domain": "unicopag.com.br", "url": "https://unicopag.com.br/blog/gateway"}
+          ]
+        }
+      ]
+    }
+  ]
+}
