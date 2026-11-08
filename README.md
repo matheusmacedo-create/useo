@@ -39,7 +39,7 @@ docs/escopo.md               escopo, decisões e critérios de pronto
 ### 1. Supabase (projeto novo, isolado)
 
 1. Crie um projeto em supabase.com (região São Paulo).
-2. **SQL Editor** → cole e rode `supabase/migrations/20261106000000_init.sql`.
+2. **SQL Editor** → cole e rode, em ordem, cada arquivo de `supabase/migrations/`.
    (Ou, com a CLI: `supabase link --project-ref <ref>` e `supabase db push`.)
 3. **Project Settings → API**: anote a *Project URL* e a chave *service_role*.
 
